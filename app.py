@@ -45,5 +45,5 @@ if uploaded_file is not None:
     predicted_class = labels[predicted_label]
 
     # Show result
-    st.subheader("Prediction")
-    st.write(f"Predicted Tumor Type: **{predicted_class}**")
+    st.subheader("Detection")
+    st.write(f"Detected Tumor Type: **{predicted_class}**")
