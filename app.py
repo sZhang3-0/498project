@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("Choose a JPG file", type=["jpg"])
 # Load model once
 @st.cache_resource
 def load_cnn_model():
-    model = load_model('/content/drive/MyDrive/Model/CNN.h5')
+    model = load_model('model_best.h5')
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     return model
 
